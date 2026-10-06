@@ -1,0 +1,52 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: arm-none-eabi-gcc.exe build active file",
+			"command": "C:/Users/mdari/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/arm-none-eabi-gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-mthumb",
+				"-mcpu=cortex-m4",
+				""
+			],
+			"options": {
+				"cwd": "C:/Users/mdari/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/Users/mdari/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/arm-none-eabi-gcc.exe"
+		},
+		{
+			"type": "cmake",
+			"label": "CMake: build",
+			"command": "build",
+			"targets": [
+				"[N/A - Select Kit]"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "CMake template build task"
+		},
+		{
+			"type": "cmake",
+			"label": "CMake: clean",
+			"command": "clean",
+			"problemMatcher": [],
+			"detail": "CMake template clean task"
+		},
+		{
+			"label": "STM: Run CubeMX",
+			"group": "none",
+			"type": "shell",
+			"command": "& 'C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeMX/STM32CubeMX.exe'"
+		}
+	]
+}
